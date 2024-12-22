@@ -6,6 +6,8 @@
 body {
   background-color: #2D3250;
   margin:0;
+  padding: 0;
+  /* border: 1px solid red; */
 }
 
 .navbar  {
@@ -38,14 +40,17 @@ body {
 }
 
 .hero-container {
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
-  padding: 6rem;
   height: 80vh;
+  padding: 6rem;
   background-color: #16223A;
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 94%);
+  overflow: hidden;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 94%); */
   
 }
 
@@ -54,13 +59,14 @@ body {
   flex-direction: column; /* Stack items vertically */
   align-items: flex-start; /* Align items to the left (if needed) */
   gap: 1rem; /* Add space between elements */
-  max-width: 100%;
-  min-width: 50%;
+  /* s */
+  /* border: 2px solid #000; */
+  min-width: clamp(350px, 60%, 900px);
 }
 
 
 .hero-text {
-  font-size: 3.5rem;
+  font-size: clamp(1.5rem, 4vw, 4rem);
   font-weight: 400;
 }
 
@@ -79,6 +85,11 @@ body {
   padding: 0.8rem 1.5rem;
 }
 
+.hero-image {
+  height: 90vh;
+  width: 60vh;
+}
+
 .skills-container {
   height: 40vh;
   display: flex;
@@ -90,6 +101,7 @@ body {
 
 .skills-icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;  
 }
 
