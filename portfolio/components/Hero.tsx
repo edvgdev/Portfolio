@@ -5,7 +5,6 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div>
       <div className='hero-container'>
         <div className='hero-content'>
             <h1 className='hero-text'>Hello! I am <span>Edison</span>, </h1>
@@ -14,9 +13,8 @@ const Hero = () => {
         </div>
 
         
-        <Image src={hero} alt='logo' width={700} height={900}/>
+        <Image  className='hero-image' src={hero} alt='logo'/>
       </div>
-    </div>
   )
 }
 
