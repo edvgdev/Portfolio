@@ -12,8 +12,10 @@ const Hero = () => {
             <button className='hero-button'>Download CV</button>
         </div>
 
-        
-        <Image  className='hero-image' src={hero} alt='logo'/>
+        <div className="hero-image-wrapper">
+            <Image className="hero-image" src={hero} alt="logo" />
+            <div className="hero-circle"></div>
+        </div>
       </div>
   )
 }
